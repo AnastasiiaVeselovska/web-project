@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --font-title: "Bebas Neue", serif;
+  --font-text: "Nunito", sans-serif;
+  /* color of titles */
+  --color-text-primary: #272727;
+  /* color of subtitles */
+  --color-text-secondary: #4d4d4d;
+  /* color of descriptions */
+  --color-text-body: #6a6a6a;
+  /* color of most buttons and text accents */
+  --color-accent: rgb(28, 76, 151);
+  /* color of prices and accent buttons */
+  --color-accent-additional: rgb(255, 123, 22);
+  /* color of buttons text*/
+  --color-text-buttons: rgb(255, 255, 255);
+  /* color of dark elements */
+  --dark-bg-color: #272727;
+  /* color white */
+  --color-primary-white: rgb(255, 255, 255);
+  /* color of additional text */
+  --color-additional-text: rgb(248, 243, 239);
+  /* color of header menu */
+  --color-menu-items: rgba(255, 255, 255, 0.76);
+  /*color of background (beige)*/
+  --color-bg-second: rgb(248, 243, 239);
+  /* color of secondary button's background */
+  --color-secondary-button: #464C5C;
+
+  /* transition for all  */
+  --transiton-primary-all: all .3s ease-in-out;
+}
+
+body {
+  font-family: var(--font-text);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 1280px;
+    padding: 0 40px;
+  }
+}
+
+.divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-text-buttons);
+  padding: 10px 20px;
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: var(--color-secondary-button);
+  color: var(--color-text-buttons);
+  padding: 10px 20px;
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 40px;
+}
