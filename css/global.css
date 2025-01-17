@@ -20,21 +20,21 @@
   /* color of descriptions */
   --color-text-body: #6a6a6a;
   /* color of most buttons and text accents */
-  --color-accent: rgb(28, 76, 151);
+  --color-accent: #1c4c97;
   /* color of prices and accent buttons */
   --color-accent-additional: rgb(255, 123, 22);
   /* color of buttons text*/
-  --color-text-buttons: rgb(255, 255, 255);
+  --color-text-buttons: #ffffff;
   /* color of dark elements */
   --dark-bg-color: #272727;
   /* color white */
   --color-primary-white: rgb(255, 255, 255);
   /* color of additional text */
-  --color-additional-text: rgb(248, 243, 239);
+  --color-additional-text: #f8f3ef;
   /* color of header menu */
-  --color-menu-items: rgba(255, 255, 255, 0.76);
+  --color-menu-items: #ffffffc2;
   /*color of background (beige)*/
-  --color-bg-second: rgb(248, 243, 239);
+  --color-bg-second: #f8f3ef;
   /* color of secondary button's background */
   --color-secondary-button: #464C5C;
 
