@@ -7,28 +7,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 :root {
   scroll-behavior: smooth;
-  --font-title: "Bebas Neue", serif;
+  --font-title: "Bebas Neue", sans-serif;
   --font-text: "Nunito", sans-serif;
-  /* color of titles */
-  --color-text-primary: #272727;
-  /* color of subtitles */
-  --color-text-secondary: #4d4d4d;
+
+  /* color of subtitles (a high font) and dark elements */
+  --color-primary: rgb(39, 39, 39);  /* #272727 */
   /* color of descriptions */
   --color-text-body: #6a6a6a;
   /* color of most buttons and text accents */
-  --color-accent: #1c4c97;
+  --color-accent: rgb(28, 76, 151);
   /* color of prices and accent buttons */
-  --color-accent-additional: rgb(255, 123, 22);
-  /* color of buttons text*/
-  --color-text-buttons: #ffffff;
-  /* color of dark elements */
-  --dark-bg-color: #272727;
+  --color-accent-additional: rgb(255, 123, 22);  /* #ff7b16 */
   /* color white */
   --color-primary-white: rgb(255, 255, 255);
+  /* color additional light text */
+  --color-additional-light-text: rgb(248, 243, 239);
   /* color of additional text */
   --color-additional-text: #f8f3ef;
   /* color of header menu */
@@ -36,14 +34,21 @@
   /*color of background (beige)*/
   --color-bg-second: #f8f3ef;
   /* color of secondary button's background */
-  --color-secondary-button: #464C5C;
+  --color-secondary-button: #464c5c;
+  /* color of divider */
+  --color-divider: rgba(0, 0, 0, 0.07);
+  /* color of bottom line */
+  --color-bottom-line: rgba(33, 39, 54, 0.12);
+  /* color of input background */
+  --color-input-background: rgb(39, 39, 39, 0.12);
 
   /* transition for all  */
-  --transiton-primary-all: all .3s ease-in-out;
+  --transiton-primary-all: all 0.3s ease-in-out;
 }
 
 body {
   font-family: var(--font-text);
+  overflow-x: hidden;
 }
 
 img {
@@ -53,9 +58,12 @@ img {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.container {
+body .container {
+  max-width: 1280px;
   width: 100%;
   padding: 0 24px;
   margin: 0 auto;
@@ -70,40 +78,13 @@ ul {
   }
 }
 
+body .overflow-hidden {
+  overflow: hidden;
+}
+
 .divider {
+  border: none;
   height: 1px;
-  background-color: #ccc;
-  margin: 20px 0;
-}
-
-.btn-primary {
-  display: inline-block;
-  background-color: var(--color-accent);
-  color: var(--color-text-buttons);
-  padding: 10px 20px;
-  font-family: var(--font-text);
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 40px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 40px;
-}
-
-.btn-secondary {
-  display: inline-block;
-  background-color: var(--color-secondary-button);
-  color: var(--color-text-buttons);
-  padding: 10px 20px;
-  font-family: var(--font-text);
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 40px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 40px;
+  background-color: var(--color-divider);
+  margin: 15.5px 0;
 }
