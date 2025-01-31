@@ -25,8 +25,9 @@
       }
 
       @media (min-width: 765px) {
-        .faq__subtitle, .faq__separator {
-          font-size: 4vw; 
+        .faq__subtitle,
+        .faq__separator {
+          font-size: 4vw;
         }
       }
     }
@@ -83,7 +84,14 @@
           margin-top: 20px;
           font-size: 1.1rem;
           color: var(--color-text-body);
-          display: none;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease;
+
+          &.active::after {
+            content: "-";
+            transform: translateY(-50%) rotate(180deg);
+          }
         }
       }
     }
@@ -106,7 +114,8 @@
       flex-direction: column;
       gap: 15px;
 
-      .faq__form-input, .faq__form-textarea {
+      .faq__form-input,
+      .faq__form-textarea {
         width: 100%;
         padding: 12px 21px;
         margin: 12px 0 0;
@@ -151,13 +160,13 @@
 
   @media (min-width: 765px) {
     .faq__form {
-      width: 500px; 
+      width: 500px;
     }
   }
-  
+
   @media (max-width: 765px) {
     .faq__form {
-      width: 100%; 
+      width: 100%;
     }
   }
 }
