@@ -41,6 +41,10 @@
   --color-bottom-line: rgba(33, 39, 54, 0.12);
   /* color of input background */
   --color-input-background: rgb(39, 39, 39, 0.12);
+  /* color of success message */
+  --color-success: rgb(0, 128, 0);
+  /* color of error message */
+  --color-error: rgb(255, 0, 0);
 
   /* transition for all  */
   --transiton-primary-all: all 0.3s ease-in-out;
